@@ -1,0 +1,95 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Lunar Rover - Telemetry View</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="data.js"></script>
+    <link href="data.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="telemetry-holder">
+      <div class="camera" id="camera-1">
+        <span>Forward Camera</span>
+        <img id="camera-feed-1" alt=":8080/?action=stream" width="100%" height="auto">
+      </div>
+      <div class="camera" id="camera-2">
+        <span>Rear Camera</span>
+        <img id="camera-feed-2" alt=":8090/?action=stream" width="100%" height="auto">
+      </div>
+      <div class="camera" id="thermal-1">
+        <span>Thermal Sensor</span>
+        <img id="thermal-feed" alt=":8100/?action=stream" width="100%" height="auto">
+      </div>
+    </div>
+    <div class="telemetry-holder">
+      <div class="data" id="drive">
+        <center><div class="label"><h1>Drive System</h1></div></center>
+        <table class="driveTable">
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Speed (%)</td>
+                    <td>cell2_1</td>
+                </tr>
+                <tr>
+                    <td>Duration (s)</td>
+                    <td>cell2_2</td>
+                </tr>
+                <tr>
+                    <td>Remaining (s)</td>
+                    <td>cell2_3</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="data" id="roverCanvas"></div>
+      <div class="data" id="armAngles">
+        <center><div class="label"><h1>Arm Angles</h1></div></center>
+        <table class="armTable">
+            <thead>
+                <tr>
+                    <th>Joint</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Base</td>
+                    <td>cell2_1</td>
+                </tr>
+                <tr>
+                    <td>Joint 1</td>
+                    <td>cell2_2</td>
+                </tr>
+                <tr>
+                    <td>Joint 2</td>
+                    <td>cell2_3</td>
+                </tr>
+                <tr>
+                    <td>Joint 3</td>
+                    <td>cell2_4</td>
+                </tr>
+                <tr>
+                    <td>Joint 4</td>
+                    <td>cell2_5</td>
+                </tr>
+                <tr>
+                    <td>Bucket</td>
+                    <td>cell2_6</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="data" id="temperatures">
+        <canvas id="temp-graph"></canvas>
+      </div>
+    <div>
+  </body>
+</html>

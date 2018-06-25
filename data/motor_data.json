@@ -1,0 +1,31 @@
+{
+	"enable pins": [19, 27],
+	"left bank": {
+	    "status flag pin": [12, 20],
+		"invert pin": 16,
+		"front motor": {
+			"pwm channel": 14,
+			"secondary input pin": 21,
+            "max rpm": 26
+		},
+		"rear motor": {
+			"pwm channel": 15,
+			"secondary input pin": 13,
+            "max rpm": 26
+		}
+	},
+	"right bank" : {
+	    "status flag pin": [18, 24],
+		"invert pin": 22,
+		"front motor": {
+			"pwm channel": 12,
+			"secondary input pin": 23,
+            "max rpm": 26
+		},
+		"rear motor": {
+			"pwm channel": 13,
+			"secondary input pin": 25,
+            "max rpm": 26
+		}
+	}
+}

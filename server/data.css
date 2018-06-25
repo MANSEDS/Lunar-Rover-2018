@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300,300italic&subset=latin);
+@import url(https://fonts.googleapis.com/css?family=Lato:regular&subset=latin);
+
+body {
+    margin: 0;
+}
+
+.telemetry-holder {
+    width: 100vw;
+    height: 50vh;
+    font-size: 0;
+}
+
+.camera {
+    width: 33.3333vw;
+    height: 50vh;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+}
+.camera > span {
+    font-family:'Lato';
+    font-weight:300;
+    font-style:normal;
+    font-size: 2em;
+    text-decoration:none;
+    color:#000;
+    letter-spacing:0em;
+    text-align: center;
+}
+#camera-1 {
+    background-color: #CCFFFF;
+}
+#camera-2 {
+    background-color: #CCFFDD;
+    margin-left: 33.3333vw;
+}
+#thermal-1 {
+    background-color: #FFFFEE;
+    margin-left: 66.6666vw;
+}
+
+.data {
+    width: 25vw;
+    height: 50vh;
+    display: inline-block;
+    position: absolute;
+}
+#drive {
+    background-color: #A79AFF;
+}
+#roverCanvas {
+    background-color: #85E3FF;
+    margin-left: 25vw;
+}
+#armAngles {
+    background-color: #E7FFAC;
+    margin-left: 50vw;
+}
+#temperatures {
+    background-color: #FFABAB;
+    margin-left: 75vw;
+}
+
+#temp-graph {
+    margin-top: 10vh;
+}
+
+.label {
+    height: 20%;
+    font-size: 16px;
+}
+
+.label h1 {
+    font-family:'Lato';
+    font-weight:300;
+    font-style:normal;
+    font-size: 2em;
+    text-decoration:none;
+    color:#FFFFFF;
+    letter-spacing:0em;
+    text-align: center;
+}
+
+table.driveTable {
+  margin-top: 50px;
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.driveTable td, table.driveTable th {
+  padding: 8px 8px;
+}
+table.driveTable tbody td {
+  font-family:'Lato';
+  font-style:normal;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  border-left: 2px solid #D0E4F5;
+}
+table.driveTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.driveTable thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+}
+table.driveTable thead th {
+  font-family:'Lato';
+  font-style:normal;
+  font-size: 24px;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #D0E4F5;
+}
+table.driveTable thead th:first-child {
+  border-left: none;
+}
+
+table.armTable {
+  margin-top: 50px;
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.armTable td, table.armTable th {
+  padding: 8px 8px;
+}
+table.armTable tbody td {
+  font-family:'Lato';
+  font-style:normal;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  border-left: 2px solid #D0E4F5;
+}
+table.armTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.armTable thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+}
+table.armTable thead th {
+  font-family:'Lato';
+  font-style:normal;
+  font-size: 24px;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #D0E4F5;
+}
+table.armTable thead th:first-child {
+  border-left: none;
+}

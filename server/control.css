@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    width: 100vw;
+    font-size: 0;
+}
+
+.control-holder {
+    width: 33.3333vw;
+    height: 100vh;
+    display: inline-block;
+
+    position: absolute;
+
+    font-size: 16px;
+    font-family: "Courier New";
+}
+.control-holder > h1 {
+    font-size: 2em;
+    margin-left: 1.1em;
+}
+
+#command-queue-live {
+    background-color: #FFDDCC;
+}
+#command-queue-staging {
+    background-color: #FFEECC;
+    margin-left: 33.3333vw;
+}
+#command-palette {
+    background-color: #FFFFCC;
+    margin-left: 66.6666vw;
+}
+
+.queue-holder {
+    font-size: 0.8em;
+}
+#queue {
+    list-style-type: none;
+}
+#queue .section {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+
+    display: inline-block;
+    min-width: 150px;
+}
+#queue .name {
+    font-size: 1.1em;
+    color: #222;
+
+    display: inline-block;
+    min-width: 125px;
+}
+#queue i,
+#queue b {
+    color: #444;
+}
+
+#all-resume {
+    position: absolute;
+    bottom: 20px;
+    right: 130px;
+
+    background-color: green;
+    border-radius: 6px;
+    border: darkgreen 1px solid;
+
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#all-resume:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+#all-stop {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: red;
+    border-radius: 6px;
+    border: darkred 1px solid;
+
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#all-stop:hover {
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+/* Tab System */
+.tab {
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    background-color: #e6ffcc;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 1.2em;
+}
+button::-moz-focus-inner {
+    border: 0;
+}
+.tab button:hover {
+    background-color: #daffb3;
+}
+.tab button.active {
+    background-color: #cdff99;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    overflow-y:scroll;
+    height: 83vh;
+    /*border: 1px solid #ccc;
+    border-top: none;*/
+}

@@ -1,0 +1,18 @@
+{
+    "current angles" : {
+        "joint 0" : 0,
+        "joint 1" : 0,
+        "joint 2" : 0,
+        "joint 3" : 0,
+        "joint 4" : 0,
+        "joint 5" : 0
+    },
+    "desired angles" : {
+        "joint 0" : 0,
+        "joint 1" : 0,
+        "joint 2" : 0,
+        "joint 3" : 0,
+        "joint 4" : 0,
+        "joint 5" : 0
+    }
+}

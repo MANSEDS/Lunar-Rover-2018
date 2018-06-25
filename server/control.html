@@ -1,0 +1,121 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Lunar Rover - Control Interface</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="control.js"></script>
+    <link href="control.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="control-holder" id="command-queue-live">
+      <h1>Live Commands</h1>
+      <div id="live-queue-holder" class="queue-holder"></div>
+      <div id="all-resume" onclick="allResume()">RESUME</div>
+      <div id="all-stop" onclick="allStop()">STOP</div>
+    </div>
+    <div class="control-holder" id="command-queue-staging">
+      <h1>Staged Commands</h1>
+      <div id="staging-queue-holder" class="queue-holder"></div>
+    </div>
+    <div class="control-holder" id="command-palette">
+      <h1>Command Palette</h1>
+      <div id="command-palette-holder">
+         <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Motors')">Motors</button>
+          <button class="tablinks" onclick="openTab(event, 'Arm')">Arm</button>
+          <button class="tablinks" onclick="openTab(event, 'Camera')">Camera</button>
+        </div>
+
+        <div id="Motors" class="tabcontent">
+          <div>
+            <form action="#" id="forward" onsubmit="submitForward()">
+              <h3>Forward</h3>
+              <span>Velocity</span>
+              <input class="vel" type="text" />
+              <span>Duration</span>
+              <input class="dur"  type="text" />
+              <input type="submit" value="Stage" />
+            </form>
+            <form action="#" id="reverse" onsubmit="submitReverse()">
+              <h3>Reverse</h3>
+              <span>Velocity</span>
+              <input class="vel" type="text" />
+              <span>Duration</span>
+              <input class="dur"  type="text" />
+              <input type="submit" value="Stage" />
+            </form>
+            <form action="#" id="left" onsubmit="submitLeft()">
+              <h3>Left</h3>
+              <span>Angle</span>
+              <input class="ang" type="text" />
+              <input type="submit" value="Stage" />
+            </form>
+            <form action="#" id="right" onsubmit="submitRight()">
+              <h3>Right</h3>
+              <span>Angle</span>
+              <input class="ang" type="text" />
+              <input type="submit" value="Stage" />
+            </form>
+          </div>
+        </div>
+
+        <div id="Arm" class="tabcontent">
+          <form action="#" id="stow" onsubmit="submitStow()">
+            <h3>Stow</h3>
+            <input type="submit" value="Stage" />
+          </form>
+          <form action="#" id="extend" onsubmit="submitExtend()">
+            <h3>Extend</h3>
+            <input type="submit" value="Stage" />
+          </form>
+          <form action="#" id="ice-box" onsubmit="submitIceBox()">
+            <h3>Go To Ice Box</h3>
+            <input type="submit" value="Stage" />
+          </form>
+          <form action="#" id="grip" onsubmit="submitGrip()">
+            <h3>Grip</h3>
+            <input type="submit" value="Stage" />
+          </form>
+          <form action="#" id="release" onsubmit="submitRelease()">
+            <h3>Release</h3>
+            <input type="submit" value="Stage" />
+          </form>
+          <form action="#" id="arm-go-to" onsubmit="submitArmGoTo()">
+            <h3>Go To</h3>
+            <span>X-Position</span>
+            <input class="x" type="text" />
+            <span>Y-Position</span>
+            <input class="y" type="text" />
+            <span>Z-Position</span>
+            <input class="z" type="text" />
+            <input type="submit" value="Stage" />
+          </form>
+          <form action="#" id="orient" onsubmit="submitOrient()">
+            <h3>Orient</h3>
+            <span>X-Angle</span>
+            <input class="x" type="text" />
+            <span>Y-Angle</span>
+            <input class="y" type="text" />
+            <span>Z-Angle</span>
+            <input class="z" type="text" />
+            <input type="submit" value="Stage" />
+          </form>
+        </div>
+
+        <div id="Camera" class="tabcontent">
+          <form action="#" id="pan" onsubmit="submitPan()">
+            <h3>Pan</h3>
+            <input type="submit" value="Stage" />
+          </form>
+          <form action="#" id="camera-go-to" onsubmit="submitCameraGoTo()">
+            <h3>Go To</h3>
+            <span>Angle</span>
+            <input class="ang" type="text" />
+            <input type="submit" value="Stage" />
+          </form>
+        </div> 
+      </div>
+    </div>
+  </body>
+</html>

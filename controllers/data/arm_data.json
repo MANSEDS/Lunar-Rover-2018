@@ -1,0 +1,40 @@
+{
+	"number of joints": 5,
+	"DH notation": {
+		"joint 0": {
+			"pwm channel": 0,
+			"link length": 50,
+			"axis offset": 0,
+            "relative axis": 0,
+			"servo type": ""
+		},
+		"joint 1": {
+			"pwm channel": 1,
+			"link length": 50,
+			"axis offset": 0,
+            "relative axis": 0,
+			"servo type": "HS 645"
+		},
+		"joint 2": {
+			"pwm channel": 2,
+			"link length": 50,
+			"axis offset": 0,
+            "relative axis": 0,
+			"servo type": "HS 645"
+		},
+		"joint 3": {
+			"pwm channel": 3,
+			"link length": 50,
+			"axis offset": 0,
+            "relative axis": 0,
+			"servo type": ""
+		},
+		"joint 4": {
+			"pwm channel": 4,
+			"link length": 50,
+			"axis offset": 0,
+            "relative axis": 0,
+			"servo type": ""
+		}
+	}
+}
