@@ -17,7 +17,6 @@ import RPi.GPIO as GPIO
 import Adafruit_PCA9685
 import time
 import logging
-import json
 
 
 # Logging config
@@ -118,18 +117,9 @@ if __name__ == "__main__":
 
     # Parse arguments
     args = parser.parse_args()
-    if args.pan is not None:
-        p = args.pan
-    else:
-        p = False
-    if args.move is not None:
-        m = args.move
-    else:
-        m =  False
-    if args.angle is not None:
-        a = int(args.angle)
-    else:
-        a = False
+    p = args.pan
+    m = args.move
+    a = int(args.angle)
 
     if p:
         # pan_GPIO(servo, servo_pwm, servo_dc_limits)

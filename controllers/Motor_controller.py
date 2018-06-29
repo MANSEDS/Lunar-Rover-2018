@@ -152,7 +152,7 @@ if __name__ == "__main__":
     # Activate motor through Adafruit PWM hat
     print("Start motor")
     pwm.set_pwm(channel, 0, pl)
-    time.wait(t)
+    time.sleep(t)
     pwm.set_pwm(channel, 0, 0)
 
     print("Motion completed")

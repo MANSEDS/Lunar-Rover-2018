@@ -1,0 +1,184 @@
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60
+DEBUG:root:Arguments parsed: v=5.0, t=1.0, en=19, inv=16, inp=21, stat=12, pl_min=1.0, pl_max=4000.0, channel=14 od=False
+DEBUG:root:Calculated required angular velocity for desired velocity: 2.4504402
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60
+DEBUG:root:Arguments parsed: v=5.0, t=1.0, en=19, inv=16, inp=21, stat=12, pl_min=1.0, pl_max=4000.0, channel=14 od=False
+DEBUG:root:Calculated required angular velocity for desired velocity: 2.4504402
+DEBUG:root:Calculated required pulse length for desired angular velocity: 3600.1
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60
+DEBUG:root:Arguments parsed: v=5.0, t=1.0, en=19, inv=16, inp=21, stat=12, pl_min=1.0, pl_max=4000.0, channel=14 od=False
+DEBUG:root:Calculated required angular velocity for desired velocity: 2.4504402
+DEBUG:root:Calculated required pulse length for desired angular velocity: 3600.1
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60
+DEBUG:root:Arguments parsed: v=5.0, t=1.0, en=19, inv=16, inp=21, stat=12, pl_min=1.0, pl_max=4000.0, channel=14 od=False
+DEBUG:root:Calculated required angular velocity for desired velocity: 2.4504402
+DEBUG:root:Calculated required pulse length for desired angular velocity: 3600.1
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x3E
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x3F
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60
+DEBUG:root:Arguments parsed: v=5.0, t=1.0, en=19, inv=16, inp=21, stat=12, pl_min=1.0, pl_max=4000.0, channel=14 od=False
+DEBUG:root:Calculated required angular velocity for desired velocity: 2.4504402
+DEBUG:root:Calculated required pulse length for desired angular velocity: 3600.1
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x3E
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x3F
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x10 to register 0x40
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x0E to register 0x41
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60
+DEBUG:root:Arguments parsed: v=5.0, t=1.0, en=19, inv=16, inp=21, stat=12, pl_min=1.0, pl_max=4000.0, channel=14 od=False
+DEBUG:root:Calculated required angular velocity for desired velocity: 2.4504402
+DEBUG:root:Calculated required pulse length for desired angular velocity: 3600.1
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x3E
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x3F
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x10 to register 0x40
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x0E to register 0x41
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x3E
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x3F
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x40
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0x41
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFA
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFB
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFC
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x00 to register 0xFD
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x04 to register 0x01
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_PCA9685.PCA9685:Setting PWM frequency to 60 Hz
+DEBUG:Adafruit_PCA9685.PCA9685:Estimated pre-scale: 100.725260417
+DEBUG:Adafruit_PCA9685.PCA9685:Final pre-scale: 101
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Read 0x01 from register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x11 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x65 to register 0xFE
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x01 to register 0x00
+DEBUG:Adafruit_I2C.Device.Bus.1.Address.0X40:Wrote 0x81 to register 0x00
+DEBUG:root:Set Adafruit pwm freq to 60

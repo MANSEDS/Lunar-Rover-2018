@@ -24,7 +24,7 @@ wheel_diameter = 0.12 # m
 wheel_width = 0.06 # m
 axle_length = 0.18 # m
 wheel_base = 0.155 # m
-command_line_driven = False # Take commands from command line
+command_line_driven = True # Take commands from command line
 
 
 # Import motor data including GPIO pin numbers, PWM channels & max RPM
@@ -33,7 +33,6 @@ try:
         motor_data = json.load(f)
     max_rpm = motor_data["left bank"]["front motor"]["max rpm"]
     max_ang_vel = max_rpm * 2 * pi / 60
-
 except FileNotFoundError:
     error_message = "Exiting with error. Motor data file missing. "
     print(error_message)
@@ -75,7 +74,7 @@ def exit_with_error(pin):
     else:
         error_message += right_fault_message
         print(error_message)
-    with open('logs/error.log') as f:
+    with open('logs/error.log', 'a+') as f:
         logged_error = str(datetime.datetime.now()) + error_message
         f.write(logged_error)
     sys.exit(1)
@@ -179,18 +178,19 @@ def calc_pl(pl_min, pl_max, des_ang_vel):
 
 # Calculate time to turn by desired angle at 80% of max velocity
 def turn_time(a):
-    # Calculate turning diameter,d, using pythagarus
+    # Calculate turning diameter,d, using Pythagoras
     l1 = (axle_length + wheel_width) / 2 # m
     l2 = (wheel_base) / 2 # m
     d = (l1 ** 2 + l2 ** 2) ** (0.5) # m
     # Calculate angle turned through 1 revolution of tyres
-    th = 360 * wheel_diameter / d # degrees
+    th = 360 * wheel_diameter / d * pi  # degrees
     # Calculate number of revolutions to turn by desired angle
     n = a / th # revs
     # Calculate revs/s of wheel at 80% max velocity
     om = max_rpm * 0.8 / 60
     # Calculate turn time
-    t = n / om
+    t = 9 * n / om
+    print(t)
     return t
 
 
@@ -254,16 +254,14 @@ if __name__ == "__main__":
             else:
                 a = None
             logging.debug("Arguments parsed: f=%s, b=%s, l=%s, r=%s, v=%s, d=%s, od=%s, a=%s", + \
-                        f, b, l, r, v, d, od, a)
-
-
-            # Get motor channels
+                        f, b, l, r, v, d, overdrive, a)
             motor_channels = [
                 motor_data["left bank"]["front motor"]["pwm channel"],
                 motor_data["left bank"]["rear motor"]["pwm channel"],
                 motor_data["right bank"]["front motor"]["pwm channel"],
                 motor_data["right bank"]["rear motor"]["pwm channel"]
                 ]
+
 
 
             # Main control
@@ -276,7 +274,7 @@ if __name__ == "__main__":
                             # dc = calc_dc(motor_dc_limits[i[0]], motor_dc_limits[i[1]], des_ang_vel)
                             # m = motor_insts[i]
                             # m.start(dc)
-                            pl, per = calc_pl(pl_range[i[0]], pl_range[i[1]], des_ang_vel)
+                            pl, per = calc_pl(1, 4000, des_ang_vel)
                             pwm.set_pwm(motor_channels[i], 0, pl)
                         time.sleep(d)
                         for i in range(0, 4, 1):
@@ -300,7 +298,7 @@ if __name__ == "__main__":
                     print("Please specify velocity AND duration of travel")
             elif (l or r):
                 if a:
-                    i = 0
+		    i=0
                     while a > 360:
                         a -= 360
                         i = i + 1
@@ -328,7 +326,7 @@ if __name__ == "__main__":
                             # dc = calc_dc(motor_dc_limits[i[0]], motor_dc_limits[i[1]], des_ang_vel)
                             # m = motor_insts[i]
                             # m.start(dc)
-                        pl, per = calc_pl(1, 4000, 0.8*max_ang_vel)
+                            pl, per = calc_pl(1, 4000, 0.8*max_ang_vel)
                             pwm.set_pwm(motor_channels[i], 0, pl)
                             per = - per
                         time.sleep(t)
@@ -342,7 +340,6 @@ if __name__ == "__main__":
 
         else:
             # Running automatically off human machine interface
-
             while True:
                 # Get commands from file
                 with open('commands/drive.cmnd') as f:
@@ -352,7 +349,7 @@ if __name__ == "__main__":
                 if commands["read"] == True:
                     if commands["linear"]["forward"] == True:
                         if commands["linear"]["distance"] != 0 and commands["linear"]["speed"] != 0:
-                            pl, per = calc_pl(0, 4000, commands["linear"]["speed"])
+                            pl, per = calc_pl(0, 4500, commands["linear"]["speed"])
                             GPIO_forward()
                             dur = calc_motion_duration(commands["linear"]["distance"],
                                 commands["linear"]["speed"])
@@ -361,7 +358,7 @@ if __name__ == "__main__":
                             actuate_motors(motor_channels, 0)
                     elif commands["linear"]["backwards"] == True:
                         if commands["linear"]["distance"] != 0 and commands["linear"]["speed"] != 0:
-                            pl, per = calc_pl(0, 4000, commands["linear"]["speed"])
+                            pl, per = calc_pl(0, 4500, commands["linear"]["speed"])
                             GPIO_backwards()
                             dur = calc_motion_duration(commands["linear"]["distance"],
                                 commands["linear"]["speed"])
@@ -371,7 +368,7 @@ if __name__ == "__main__":
                     elif commands["rotational"]["turn left"] == True:
                         if commands["rotational"]["angle"] != 0 and \
                                 commands["rotational"]["speed"] != 0:
-                            pl, per = calc_pl(0, 4000, commands["linear"]["speed"])
+                            pl, per = calc_pl(0, 4500, commands["linear"]["speed"])
                             GPIO_left()
                             dur = calc_motion_duration(commands["linear"]["distance"],
                                 commands["linear"]["speed"])
@@ -381,7 +378,7 @@ if __name__ == "__main__":
                     elif commands["rotational"]["turn right"] == True:
                         if commands["rotational"]["angle"] != 0 and \
                                 commands["rotational"]["speed"] != 0:
-                            pl, per = calc_pl(0, 4000, commands["linear"]["speed"])
+                            pl, per = calc_pl(0, 4500, commands["linear"]["speed"])
                             GPIO_right()
                             dur = calc_motion_duration(commands["linear"]["distance"],
                                 commands["linear"]["speed"])
