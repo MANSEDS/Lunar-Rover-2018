@@ -152,8 +152,8 @@ if __name__ == "__main__":
             gp.add_argument("-p", "--position", help="Gripper Position Vector")
             gp.add_argument("-i", "--icebox", help="Position gripper above ice box to deposit sample")
             gg = g.add_mutually_exclusive_group()
-            gg.add_argument("-g", "grip", help="Grip", action="store_true")
-            gg.add_argument("-d", "drop", help="Release grip", action="store_true")
+            gg.add_argument("-g", "--grip", help="Grip", action="store_true")
+            gg.add_argument("-d", "--drop", help="Release grip", action="store_true")
             args = parser.parse_args()
             e = args.extend
             s = args.stow
