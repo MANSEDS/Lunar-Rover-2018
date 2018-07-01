@@ -94,13 +94,13 @@ def extend():
 def stow():
     val = 1
     while True:
-        pwm.set_pwm(0, 0, pl_limits_arm[0][0])
-        pwm.set_pwm(1, 0, pl_limits_arm[1][0])
-        pwm.set_pwm(2, 0, pl_limits_arm[2][0])
-        pwm.set_pwm(3, 0, pl_limits_arm[3][0])
-        pwm.set_pwm(4, 0, pl_limits_arm[4][0])
-        pwm.set_pwm(5, 0, pl_limits_grip[0][0])
-        pwm.set_pwm(6, 0, pl_limits_grip[1][0])
+        pwm.set_pwm(0, 0, 500)
+        pwm.set_pwm(1, 0, 500)
+        pwm.set_pwm(2, 0, 500)
+        pwm.set_pwm(3, 0, 500)
+        pwm.set_pwm(4, 0, 500)
+        pwm.set_pwm(5, 0, 500)
+        pwm.set_pwm(6, 0, 500)
         if val == 1:
             logging.debug("Arm stowed")
             val -= 1
@@ -158,19 +158,19 @@ if __name__ == "__main__":
             if args.extend:
                 e = args.extend
             else:
-                extend = False
+                e = False
             if args.extend:
-                e = args.stow
+                s = args.stow
             else:
-                extend = False
+                s = False
             if args.position:
-                e = args.position
+                p = args.position
             else:
-                position = False
+                p = False
             if args.icebox:
-                e = args.icebox
+                d = args.icebox
             else:
-                icebox = False
+                d = False
             s = args.stow
             p = args.position # <-- convert from string into ??? format???
             dep = args.icebox
