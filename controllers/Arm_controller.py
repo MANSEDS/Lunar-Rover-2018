@@ -155,12 +155,27 @@ if __name__ == "__main__":
             gg.add_argument("-g", "grip", help="Grip", action="store_true")
             gg.add_argument("-d", "drop", help="Release grip", action="store_true")
             args = parser.parse_args()
-            e = args.extend
+            if args.extend:
+                e = args.extend
+            else:
+                extend = False
+            if args.extend:
+                e = args.stow
+            else:
+                extend = False
+            if args.position:
+                e = args.position
+            else:
+                position = False
+            if args.icebox:
+                e = args.icebox
+            else:
+                icebox = False
             s = args.stow
             p = args.position # <-- convert from string into ??? format???
             dep = args.icebox
-            logging.debug("Arguments parsed: e=%s, s=%s, z=%s, r=%s, t=%s", + \
-                                e, s, z, r, t)
+            logging.debug("Arguments parsed: e=%s, s=%s, p=%s", + \
+                                e, s, p)
 
 
             if (e or s):
