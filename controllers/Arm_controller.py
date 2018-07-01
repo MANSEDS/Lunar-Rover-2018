@@ -17,7 +17,7 @@ logging.basicConfig(filename='arm.log', level=logging.DEBUG)
 
 
 # System variables
-command_line_driven = False # Take commands from command line
+command_line_driven = True # Take commands from command line
 
 
 # Import arm data including PWM channels, DH notation and joint servos
