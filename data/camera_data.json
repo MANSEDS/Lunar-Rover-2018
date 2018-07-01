@@ -1,0 +1,9 @@
+{
+	"number of cameras": 2,
+	"1": {
+        "pwm channel" : 7
+	},
+    "2": {
+        "pwm channel" : 8    
+    }
+}
